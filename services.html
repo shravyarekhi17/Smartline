@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMARTLINE INDUSTRIAL SUPPLIES INC.</title>
+    <link rel="stylesheet" href="styles.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <div class="navbar__left">
+                <div class="navbar__logo-wrapper">
+                    <a href="/" id="navbar__logo">
+                        <i class="fas fa-gem"></i> SMARTLINE INDUSTRIAL SUPPLIES INC.
+
+                    </a>
+                </div>
+            </div>
+            <div class="navbar__right">
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="/" class="navbar__links">
+                            <i class="fas fa-house"></i> Home
+                        </a>
+                    </li>
+                </li>
+                <li class="navbar__item">
+                    <a href="/aboutus.html" class="navbar__links">
+                        <i class="fas fa-user"></i> About us
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/services.html" class="navbar__links">
+                        <i class="fas fa-diagram-project"></i> Services
+                    </a>
+                </li>
+                <li class="navbar__item navbar__btn">
+                    <a href="/contact.html" class="button">
+                        <i class="fas fa-envelope"></i> Contact Information
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- NAVBAR ENDS --
+
+<!-HERO SECTION STARTS HERE -->
+<div class="main">
+    <div class="servicess">
+        <h1>SERVICES</h1>
+        <p class="intro">
+            Here at Smartline Industrial Supplies Inc., we specialize in providing fully customized tooling solutions tailored to your exact needs. Whether you require standard or specialized tools, our team is dedicated to delivering precision, quality, and reliability in every product. We take pride in being a company that prioritizes both exceptional craftsmanship and customer satisfaction, ensuring that every tool we create meets your unique requirements. Our services include: Design&Development, Mechanical Design, CAD Draughting, Reverse Engineering, CNC Milling and Turning.
+        </p>
+    </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const intro = document.querySelector(".servicess .intro");
+  const services = document.querySelectorAll(".servicess .service");
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Animate intro first
+        intro.classList.add("show");
+
+        // Animate services one by one
+        services.forEach((el, index) => {
+          setTimeout(() => {
+            el.classList.add("show");
+          }, (index + 1) * 400); // stagger delay
+        });
+
+        obs.disconnect(); // only trigger once
+      }
+    });
+  }, { threshold: 0.2 });
+
+  observer.observe(document.querySelector(".servicess"));
+});
+
+</script>
+<br><br>
+
+<div class="whatweoffer">
+    <h1>MACHINE CAPABILITIES</h1>
+</div>
+
+
+
+
+
+
+<div class="services-section">
+
+    <!-- First Row: CNC1 - Text - CNC2 -->
+    <div class="offers__row">
+        <!-- CNC Image -->
+        <div class="pic">
+            <img src="images/cnc.jpeg" alt="CNC Machining">
+        </div>
+
+        <!-- CNC Text -->
+        <div class="pic_text1">
+            <h2>CNC MACHINING</h2>
+            <p>
+                Mass production<br>
+                Prototype<br>
+                Sample development<br>
+                High precision mechanical components
+            </p>
+        </div>
+
+        <!-- CNC2 Image -->
+        <div class="pic">
+            <img src="images/cnc2.jpeg" alt="CNC2">
+        </div>
+    </div>
+
+   <!-- Second Row: Conventional | Text | Welding -->
+<div class="offers__row">
+    <!-- Conventional Image -->
+    <div class="pic">
+        <img src="images/convv.jpeg" alt="Conventional Machining">
+    </div>
+
+    <!-- Shared Text Block (center) -->
+    <div class="pic_text1">
+        <h2>MANUAL MACHINING & WELDING</h2>
+        <p>
+            Turning & Milling<br>
+            Drilling & Grinding (Internal & External)<br>
+            Boring<br>
+            Deep hole drilling<br>
+            Threading<br>
+            MIG & TIG Welding<br>
+            Arc Welding<br>
+            Spot Welding<br>
+            Custom Fabrication<br>
+            High precision assembly
+        </p>
+    </div>
+
+    <!-- Welding Image -->
+    <div class="pic">
+        <img src="images/ww.jpg" alt="Welding">
+    </div>
+</div>
+
+
+
+
+</html>
