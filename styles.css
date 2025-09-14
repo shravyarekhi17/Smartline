@@ -30,7 +30,7 @@
 .navbar__left {
    display: flex;
    align-items: center;
-   margin-left: -90px;
+   margin-left: -80px;
    white-space: nowrap;              /* ✅ keeps logo in ONE line */
    flex-shrink: 0;                   /* ✅ prevents logo from shrinking */
 }
