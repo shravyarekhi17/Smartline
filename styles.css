@@ -30,7 +30,7 @@
 .navbar__left {
    display: flex;
    align-items: center;
-   margin-left: -80px;
+   margin-left: -40px;
    white-space: nowrap;              /* ✅ keeps logo in ONE line */
    flex-shrink: 0;                   /* ✅ prevents logo from shrinking */
 }
@@ -53,7 +53,7 @@
 .navbar__right {
    display: flex;
    align-items: center;
-   margin-left: 109px;   /* ✅ creates gap between logo & menu */
+   margin-left: 100px;   /* ✅ creates gap between logo & menu */
 }
 
 .navbar__menu {
