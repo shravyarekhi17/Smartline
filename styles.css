@@ -53,7 +53,7 @@
 .navbar__right {
    display: flex;
    align-items: center;
-   margin-left: 70px;   /* ✅ creates gap between logo & menu */
+   margin-left: 60px;   /* ✅ creates gap between logo & menu */
 }
 
 .navbar__menu {
@@ -77,7 +77,7 @@
    padding: 0 1rem;
    height: 100%;
    white-space: nowrap; /* KEEP TEXT ON ONE LINE */
-   font-size: 1.6rem;   /* ✅ slightly bigger to match logo */
+   font-size: 1.54rem;   /* ✅ slightly bigger to match logo */
 }
 
 .button i {
